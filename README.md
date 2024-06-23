@@ -2,7 +2,7 @@
 
 ## 💡About The Project
 
-Welcome to my `ft_printf` project! It's my simplified version of `printf` in C, based on the [**project guidelines**](https://github.com/appinha/42cursus/tree/master/_PDFs).
+Welcome to my `ft_printf` project! It's my simplified version of `printf` in C, based on the [**project guidelines**](docs/en.subject.pdf).
 The goal here is to learn about **variadic arguments** and **formatted output**.
 
 - - -
@@ -42,9 +42,9 @@ Here's how you can get `ft_printf` up and running on your machine:
 <br />
 
 1. **Clone the repository**
-   
+
 ```bash
-git clone https://github.com/yourusername/ft_printf.git
+git clone git@github.com:sillymax/ft_printf.git
 cd ft_printf
 ```
 
@@ -62,7 +62,7 @@ make
 
 3. **Link the library**
 
-&nbsp;&nbsp;&nbsp; > _To use the `lftprintf.a` library in your code, include its header:_
+&nbsp;&nbsp;&nbsp; > _To use the `lftprintf.a` library in your code, include it's header:_
 
 ```c
 #include "ft_printf.h"
@@ -87,6 +87,6 @@ make
 
 ## 📷 Project Result
 
-![Screenshot of *ychng* result from the 42KL cursus ft_printf project.](screenshot/ft_printf_result.png)
+![Screenshot of *ychng* result from the 42KL cursus ft_printf project.](screenshots/ft_printf_result.png)
 
 
