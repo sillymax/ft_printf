@@ -21,6 +21,7 @@ I wanted to understand how `printf` works in C. It's a function we use all the t
 with support for conversion specifiers such as `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, and `%%`.
 
 <br />
+
 Example:
 
 ```c
@@ -49,20 +50,22 @@ cd ft_printf
 ```
 
 <hr />
+<br />
 
 2. **Build the project**
 
-&nbsp;&nbsp;&nbsp; > _Running `make` will compile the project and create a `lftprintf.a` library._
+> \> _Running `make` will compile the project and create a `lftprintf.a` library._
 
 ```bash
 make
 ```
 
 <hr />
+<br />
 
 3. **Link the library**
 
-&nbsp;&nbsp;&nbsp; > _To use the `lftprintf.a` library in your code, include it's header:_
+> \> _To use the `lftprintf.a` library in your code, include it's header:_
 
 ```c
 #include "ft_printf.h"
@@ -70,10 +73,20 @@ make
 
 <br />
 
-&nbsp;&nbsp;&nbsp; > _When compiling your code, add the required flags to link the library:_
+> \> _When compiling your code, add the required flags to link the `lftprintf.a` library:_
 
 ```bash
 -I path/to/ft_printf.h -L path/to/libftprintf.a -lftprintf
+```
+
+- - -
+
+## 🧪 Run Tests
+
+To run the tests for `ft_printf`, use the following command:
+
+```bash
+make test
 ```
 
 - - -
