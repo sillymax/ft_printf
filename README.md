@@ -81,7 +81,7 @@ make
 
 - - -
 
-## 🧪 Run Tests
+## 🧪 Run Test
 
 To run the tests for `ft_printf`, use the following command:
 
