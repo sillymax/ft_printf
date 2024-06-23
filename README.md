@@ -49,7 +49,6 @@ git clone git@github.com:sillymax/ft_printf.git
 cd ft_printf
 ```
 
-<hr />
 <br />
 
 2. **Build the project**
@@ -60,7 +59,6 @@ cd ft_printf
 make
 ```
 
-<hr />
 <br />
 
 3. **Link the library**
@@ -70,8 +68,6 @@ make
 ```c
 #include "ft_printf.h"
 ```
-
-<br />
 
 > \> _When compiling your code, add the required flags to link the `lftprintf.a` library:_
 
