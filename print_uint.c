@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   print_uint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ychng <ychng@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ychng <ychng@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 15:20:49 by ychng             #+#    #+#             */
-/*   Updated: 2023/06/10 23:00:00 by ychng            ###   ########.fr       */
+/*   Updated: 2024/06/23 19:56:27 by ychng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,14 +43,14 @@ void	uint_to_buf(unsigned int num, char *buffer, int *i, t_result *result)
 	buffer[*i] = '\0';
 }
 
-void	n_left_justify(unsigned int num, char *buffer, int *i, t_result *result)
+void	n_left_justify(char *buffer, int *i, t_result *result)
 {
 	int	temp;
 
 	temp = 0;
 	if (result -> flags.zero_pad && !(result -> specs.precision))
 		uint_show_sign(result);
-	if (num < 0 || result -> flags.show_sign || result -> flags.space_flag)
+	if (result -> flags.show_sign || result -> flags.space_flag)
 		temp = 1;
 	if (result -> specs.precision > *i)
 		temp += result -> specs.precision;
@@ -109,5 +109,5 @@ void	print_uint(unsigned int num, t_result *result)
 	if (result -> flags.left_justify)
 		left_justify_uint(buffer, &i, result);
 	else
-		n_left_justify(num, buffer, &i, result);
+		n_left_justify(buffer, &i, result);
 }

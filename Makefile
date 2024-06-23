@@ -16,7 +16,7 @@ LIBFT_PATH	=	libft/ft_atoi.c \
 NAME	=	libftprintf.a
 OBJS	=	$(SRCS:.c=.o)
 LOBJS	= 	$(LIBFT_PATH:.c=.o)
-GCC		=	gcc
+CC		=	gcc
 CFLAGS	=	-Wall -Wextra -Werror
 RM		=	rm -f
 AR		=	ar -rcs

@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ychng <ychng@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ychng <ychng@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/28 16:32:28 by ychng             #+#    #+#             */
-/*   Updated: 2023/06/12 21:48:46 by ychng            ###   ########.fr       */
+/*   Updated: 2024/06/23 20:12:51 by ychng            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include <stdint.h>
 # include <stdarg.h>
 # include <unistd.h>
 # include "libft/libft.h"
@@ -74,4 +75,5 @@ void	width_f(int *temp, t_result *result);
 // print_upp_hex.c
 void	num_to_len(unsigned int num, int *len);
 void	hex_width(int *len, t_result *result);
+
 #endif
